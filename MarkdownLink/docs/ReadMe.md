@@ -1,15 +1,24 @@
 
 # Markdown Plugin- User Guide
+Plugin will be available as nuget package
 
 ## How it works!!!!
 
 # Overview
- Feature is divided into 3 components. ( MarkdownLink, MarkdownParser and FormatConverter)
- 1. MarkdownLink provides an interface to the client, where client can access "GetLinks()" method by passing root directory from where all md files should be read and output is stored in the form of XmlDocument.
- 2. MarkdownParser is an implementation where all the md files are accessed mentioned inside the source md file from the root directory.
- 3. FormatConverter will provide functionality to convert XmlDocument to various type formats e.g:"dgml","dot".....
+ This plugin can be installed in a client app and can be used as follows:
+ 1. It will pass the root directory to the MarkdownLinks and will recieve XmlDocument as an output, which consists of Node and Edges.
+ 2. It will pass recieved XmlDocument along with the required format as a string to format converter and recieves requested formated XmlDocument e.g:"dgml","dot".....
 
 ![](MDPlugin.jpg)
-          ![](LinksNodeEdgeCreator.jpg)
+
+## Usage
+```
+var xmlDocument = markdown.GetLinks(rootDirectory);
+var dgmlDocument = format.ConvertFormat(xmlDocument,"dgml");
+var dgmlFile = dgmlDocument.Save(fileName.dgml);
+```
+
+## Context for MarkdownParser
+![](LinksNodeEdgeCreator.jpg)
 
 
