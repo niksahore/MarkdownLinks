@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace MarkdownGraph
+namespace MarkdownLink
 {
     public class MarkdownFileParser : IMarkdownFileParser
     {

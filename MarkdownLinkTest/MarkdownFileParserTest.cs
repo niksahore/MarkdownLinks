@@ -1,4 +1,4 @@
-﻿using MarkdownGraph;
+﻿using MarkdownLink;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace MarkdownGraphTest
+namespace MarkdownLinkTest
 {
     public class MarkdownFileParserTest
     {
@@ -19,7 +19,7 @@ namespace MarkdownGraphTest
         [Fact]
         public void MarkdownParser_ReturnsConnectedMdFiles()
         {
-            var inputFile = @"C:\Nikhil\Learning\MarkdownGraph\Planion\MarkdownGraph\docs\ReadMe.md";
+            var inputFile = @"C:\Nikhil\Learning\MarkdownProject\MarkdownLinks\MarkdownLinkTest\Sample\ReadMe.md";
 
             var result = _markdownFileParser.ParseMarkdownFile(inputFile);
 

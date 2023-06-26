@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MarkdownGraph
+namespace MarkdownLink
 {
     public interface IMarkdownFileParser
     {
