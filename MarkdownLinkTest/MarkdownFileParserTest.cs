@@ -1,9 +1,5 @@
 ﻿using MarkdownLink;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace MarkdownLinkTest
@@ -19,11 +15,11 @@ namespace MarkdownLinkTest
         [Fact]
         public void MarkdownParser_ReturnsConnectedMdFiles()
         {
-            var inputFile = @"C:\Nikhil\Learning\MarkdownProject\MarkdownLinks\MarkdownLinkTest\Sample\ReadMe.md";
+            var inputFile = @"../debug/Sample/ReadMe.md";
 
             var result = _markdownFileParser.ParseMarkdownFile(inputFile);
 
-            var expectedMdFiles = new List<string> { "Basics", "Filters","Hello", "Development" };
+            var expectedMdFiles = new List<string> { "Basics", "Filters", "Hello", "Development" };
             Assert.Equal(expectedMdFiles, result);
         }
     }

@@ -1,10 +1,4 @@
 ﻿using MarkdownLink;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml;
 using Xunit;
 
 namespace MarkdownLinkTest
@@ -21,7 +15,7 @@ namespace MarkdownLinkTest
         [Fact]
         public void MarkdownLinks_ReturnsXmlDocument()
         {
-            var rootDirectory = @"C:\Nikhil\Learning\MarkdownGraph\Planion\MarkdownGraphTest\Sample";
+            var rootDirectory = @"../debug/Sample";
 
             var result = _markdown.GetLinks(rootDirectory);
 

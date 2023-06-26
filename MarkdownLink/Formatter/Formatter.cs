@@ -4,7 +4,7 @@ namespace MarkdownLink
 {
     public class Formatter : IFormatter
     {
-        public string ConvertFormat(XmlDocument xmlDocument, string formatType)
+        public XmlDocument ConvertFormat(XmlDocument xmlDocument, string formatType)
         {
             if (string.IsNullOrEmpty(formatType))
             {

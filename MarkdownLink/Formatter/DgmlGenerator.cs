@@ -1,12 +1,13 @@
-﻿using System.Xml;
+﻿using System;
+using System.Xml;
 
 namespace MarkdownLink
 {
     public class DgmlGenerator : IFormatGenerator
     {
-        public string Generate(XmlDocument xmlDocument)
+        public XmlDocument Generate(XmlDocument xmlDocument)
         {
-            return null;
+            throw new NotImplementedException();
         }
     }
 }

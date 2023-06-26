@@ -5,6 +5,6 @@ namespace MarkdownLink
 {
     public interface IFormatter
     {
-        string ConvertFormat(XmlDocument xmlDocument, string formatType);
+        XmlDocument ConvertFormat(XmlDocument xmlDocument, string formatType);
     }
 }

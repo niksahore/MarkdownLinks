@@ -4,6 +4,6 @@ namespace MarkdownLink
 {
     public interface IFormatGenerator
     {
-        string Generate(XmlDocument xmlDocument);
+        XmlDocument Generate(XmlDocument xmlDocument);
     }
 }
