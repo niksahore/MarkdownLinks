@@ -18,6 +18,10 @@ var dgmlDocument = format.ConvertFormat(xmlDocument,"dgml");
 var dgmlFile = dgmlDocument.Save(fileName.dgml);
 ```
 
+## Context for Markdown
+
+![](GraphBuilder.jpg)
+
 ## Context for MarkdownParser
 ![](LinksNodeEdgeCreator.jpg)
 
